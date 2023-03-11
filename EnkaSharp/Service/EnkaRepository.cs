@@ -1,5 +1,6 @@
 using EnkaSharp.Models;
 using EnkaSharp.Repository;
+using Newtonsoft.Json;
 
 namespace EnkaSharp.Service;
 
@@ -15,6 +16,7 @@ public class EnkaRepository:IEnkaRepository
 
     public async Task<Info> Info(long uid)
     {
+        string data;
         string Url = $"{BaseUrl}/{uid}?info";
         try
         {
@@ -27,8 +29,9 @@ public class EnkaRepository:IEnkaRepository
                     //Then get the data or content from the response in the next using statement, then within it you will get the data, and convert it to a c# object.
                     using (HttpContent content = res.Content)
                     {
-                        Console.WriteLine(Url);
-                        Console.WriteLine(content.ToString());
+                     
+                        data = await content.ReadAsStringAsync();
+                       
                     }
                 }
             }
@@ -38,6 +41,7 @@ public class EnkaRepository:IEnkaRepository
             Console.WriteLine(e);
             throw;
         }
-        return new Info();
+       
+        return  JsonConvert.DeserializeObject<Info>(data);
     }
 }

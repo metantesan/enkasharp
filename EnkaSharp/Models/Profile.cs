@@ -54,7 +54,6 @@ public class Profile
     [JsonProperty("level")] public int Level { get; set; }
 
     [JsonProperty("signup_state")] public int SignupState { get; set; }
-
     [JsonProperty("avatar")] public string Avatar { get; set; }
 }
 
