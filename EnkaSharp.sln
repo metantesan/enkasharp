@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnkaSharp", "EnkaSharp\EnkaSharp.csproj", "{C67A6F45-3B76-46D9-BA4F-423ACD4BC1F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnkaSharpExampel", "EnkaSharpExampel\EnkaSharpExampel.csproj", "{2D49D5B2-B863-4066-8BD6-EDA6CBAF263A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{C67A6F45-3B76-46D9-BA4F-423ACD4BC1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C67A6F45-3B76-46D9-BA4F-423ACD4BC1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C67A6F45-3B76-46D9-BA4F-423ACD4BC1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D49D5B2-B863-4066-8BD6-EDA6CBAF263A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D49D5B2-B863-4066-8BD6-EDA6CBAF263A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D49D5B2-B863-4066-8BD6-EDA6CBAF263A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D49D5B2-B863-4066-8BD6-EDA6CBAF263A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
