@@ -28,7 +28,7 @@ public class EnkaRepository:IEnkaRepository
                     using (HttpContent content = res.Content)
                     {
                         Console.WriteLine(Url);
-                        Console.WriteLine(content);
+                        Console.WriteLine(content.ToString());
                     }
                 }
             }
